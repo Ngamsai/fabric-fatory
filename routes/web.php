@@ -12,7 +12,11 @@ namespace App;
 | and give it the Closure to call when that URI is requested.
 |
 */
-Route::get('firebase','FirebaseController@index');
+// Route::get('firebase','FirebaseController@index');
+
+$router->get('/key', function () use ($router) {
+    return str_random(32);
+});
 
 $router->get('/', function () use ($router) {
     return $router->app->version();
