@@ -22,7 +22,7 @@ class OrdersewTable extends Migration
             $table->integer('Total');
             $table->integer('status');
            
-            $table->primary('orderSewID');
+            $table->primary('OrderSewID');
             $table->timestamps();
         });
     }
