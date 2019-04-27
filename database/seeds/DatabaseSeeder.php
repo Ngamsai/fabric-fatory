@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call('OrderofcustomerTableSeeder'); 
         $this->call('RelationemporderTableSeeder'); 
         $this->call('OrderclothofFactorSeeder'); 
+        $this->call(UsersTableSeeder::class);
     }
 }
