@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,6 +13,7 @@ namespace App;
 |
 */
 // Route::get('firebase','FirebaseController@index');
+Route::get('users', 'API\Controller@index');
 
 $router->get('/key', function () use ($router) {
     return str_random(32);

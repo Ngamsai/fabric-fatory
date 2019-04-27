@@ -12,4 +12,4 @@ public function run()
           'email' => 'test@test.com',
           'password' => '1234567890'
      ]);
-}
+}}
